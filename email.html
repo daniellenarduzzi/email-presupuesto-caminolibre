@@ -1,0 +1,572 @@
+<!doctype html>
+<html ⚡4email>
+  <head>
+    <meta charset="utf-8">
+  	<script async src="https://cdn.ampproject.org/v0.js"></script>
+  	<style amp4email-boilerplate>body{visibility:hidden}</style>
+    <style amp-custom>
+
+    /* -------------------------------------
+    GLOBAL RESETS
+    ------------------------------------- */
+    
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+    
+    .img-block {
+      display: block;
+    }
+    
+    body {
+      font-family: Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+    
+    table td {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    /* -------------------------------------
+    BODY & CONTAINER
+    ------------------------------------- */
+    
+    body {
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .body {
+      background-color: #f6f6f6;
+      width: 100%;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+      padding-top: 24px;
+      width: 600px;
+    }
+    
+    .content {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 0;
+    }
+
+    /* -------------------------------------
+    HEADER, FOOTER, MAIN
+    ------------------------------------- */
+    
+    .main {
+      background: #fff;
+      border-radius: 4px;
+      width: 100%;
+    }
+    
+    .wrapper {
+      box-sizing: border-box;
+      padding: 24px;
+    }
+    
+    .content-block {
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+    
+    .flush-top {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    
+    .flush-bottom {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .header {
+      margin-bottom: 24px;
+      margin-top: 0;
+      width: 100%;
+    }
+    
+    .header > table {
+      min-width: 100%;
+    }
+    
+    .footer {
+      clear: both;
+      padding-top: 24px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .footer td,
+    .footer p,
+    .footer span,
+    .footer a {
+      color: #999999;
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    /* -------------------------------------
+    TYPOGRAPHY
+    ------------------------------------- */
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #222222;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0;
+    }
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    
+    h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    
+    h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    
+    p,
+    ul,
+    ol {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    
+    p li,
+    ul li,
+    ol li {
+      list-style-position: outside;
+      margin-left: 16px;
+      padding: 0;
+      text-indent: 0;
+    }
+    
+    ul,
+    ol {
+      margin-left: 8px;
+      padding: 0;
+      text-indent: 0;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+
+    /* -------------------------------------
+    BUTTONS
+    ------------------------------------- */
+    
+    .btn {
+      box-sizing: border-box;
+      min-width: 100%;
+      width: 100%;
+    }
+    
+    .btn > tbody > tr > td {
+      padding-bottom: 16px;
+    }
+    
+    .btn table {
+      width: auto;
+    }
+    
+    .btn table td {
+      background-color: #ffffff;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    .btn a {
+      background-color: #ffffff;
+      border: solid 2px #3498db;
+      border-radius: 4px;
+      box-sizing: border-box;
+      color: #3498db;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      padding: 12px 24px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    .btn-primary table td {
+      background-color: #3498db;
+    }
+    
+    .btn-primary a {
+      background-color: #25D366;
+      border-color: #fff;
+      color: #ffffff;
+    }
+    
+    @media all {
+      .btn-primary table td:hover {
+        background-color: #ae2bca;
+      }
+      .btn-primary a:hover {
+        background-color: #25D366;
+        border-color: #25D366;
+      }
+    }
+    
+    .btn-secondary table td {
+      background-color: transparent;
+    }
+    
+    .btn-secondary a {
+      background-color: transparent;
+      border-color: #3498db;
+      color: #3498db;
+    }
+    
+    @media all {
+      .btn-secondary a:hover {
+        border-color: #34495e;
+        color: #34495e;
+      }
+    }
+    
+    .btn-tertiary table td {
+      background-color: transparent;
+    }
+    
+    .btn-tertiary a {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    /* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+    ------------------------------------- */
+    
+    .last {
+      margin-bottom: 0;
+    }
+    
+    .first {
+      margin-top: 0;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    
+    .align-right {
+      text-align: right;
+    }
+    
+    .align-left {
+      text-align: left;
+    }
+    
+    .text-link {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    .clear {
+      clear: both;
+    }
+    
+    .mt0 {
+      margin-top: 0;
+    }
+    
+    .mb0 {
+      margin-bottom: 0;
+    }
+    
+    .preheader {
+      color: transparent;
+      display: none;
+      height: 0;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+      visibility: hidden;
+      width: 0;
+    }
+    
+    .powered-by a {
+      text-decoration: none;
+    }
+    
+    .hr tr:first-of-type td,
+    .hr tr:last-of-type td {
+      height: 24px;
+      line-height: 24px;
+    }
+    
+    .hr tr:nth-of-type(2) td {
+      background-color: #f6f6f6;
+      height: 1px;
+      line-height: 1px;
+      width: 100%;
+    }
+    
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+    
+    @media only screen and (max-width: 640px) {
+      h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+      h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+      .main p,
+      .main ul,
+      .main ol,
+      .main td,
+      .main span {
+        font-size: 16px;
+      }
+      .wrapper {
+        padding: 8px;
+      }
+      .article {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .content {
+        padding: 0;
+      }
+      .container {
+        padding: 0;
+        padding-top: 8px;
+        width: 100%;
+      }
+      .header {
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
+      .main {
+        border-left-width: 0;
+        border-radius: 0;
+        border-right-width: 0;
+      }
+      .btn table {
+        max-width: 100%;
+        width: 100%;
+      }
+      .btn a {
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;
+      }
+      .img-responsive {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+      }
+      .alert td {
+        border-radius: 0;
+        font-size: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 16px;
+      }
+      .receipt,
+      .receipt-container {
+        width: 100%;
+      }
+      .hr tr:first-of-type td,
+      .hr tr:last-of-type td {
+        height: 16px;
+        line-height: 16px;
+      }
+    }
+
+    /* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+    ------------------------------------- */
+    
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      .apple-link a {
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-decoration: none;
+      }
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">👋Hola! tenemos una propuesta para tu página web</span>
+            <table class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <h1>👋Hola!</h1>
+                        <p class="align-center">
+                            <amp-img src="https://i.ibb.co/FYZ4Xwx/triunfalnet-logo.png"
+                            alt="photo description"
+                            width="250"
+                            height="250">
+                          </amp-img>
+                        </p>
+                        
+                        <h1 class="titulo">Propuesta de desarrollo de una pagina web para Camino Libre</h1>
+                        <h2>Sobre nosotros</h2>
+                        <p>
+                            Somos una empresa dedicada al desarrollo web,dentro de nuestro equipo contamos con 4 desarrolladores,un diseñador gráfico con amplios conocimientos en experiencia de usuario y un especialista en estrategias SEO( posicionamiento en motores de búsqueda como Google, para aparecer en los primeros resultados cuando un potencial cliente realiza una búsqueda). Podemos realizar todo lo que planteas en tu proyecto. Nosotros programamos todo el código desde cero por lo que es totalmente personalizado y refleja el toque distintivo de tu negocio.
+                        </p>
+                        
+                        <h2>Propuesta de contacto</h2>
+                        <p>
+                            Nosotros acostumbramos a realizar una reunión virtual para que nos cuentes detalladamente todo lo que necesitas en tu página web y a la vez podamos asesorarte en las mejores soluciones( de forma totalmente gratuita) ya que nuestro principal objetivo es la completa satisfacción del cliente con el producto que entregamos. Podés corroborar nuestro trabajo visitando nuestro sitio web(www.triunfalnet.com) donde vas a poder ver la rapidez de carga,lograda a través de las tecnologías que manejamos(con ello se logra la facilidad de acceso de un potencial cliente a la página,a pesar de tener una conexión lenta).Por otro lado,nos ocupamos de que tu sitio sea visible en todo tipo de dispositivos(tanto celulares,tablets,etc).Ofrecemos asesoramiento post entrega.
+                        </p>
+                        <h2>Un breve repaso por cada uno de los puntos de tu propuesta </h2>
+                        <ul>
+                            <li><span>crear una página donde pueda insertar los artículos de la revista,los videos de youtube,lo que escribo en facebook,etc.</span> Respecto a este punto,desde el punto de vista técnico lo que necesitas realizar es un blog,el cual podemos llevar a cabo utilizando herramientas que permitan una carga rápida del sitio como mencionamos anteriormente,incluso en casos de mala conexión a internet. Tu página va a ser totalmente personalizada, en ese sentido nos diferenciamos de otras propuestas que utilizan plantillas que limitan en todos sentido tanto tu creatividad,como el desarrollo a futuro de tu página al querer agregar funcionalidades. Nosotros escribimos el código desde cero permitiendo a futuro que tu sitio crezca tanto como vos quieras.</li>
+                        
+                            <li><span>quisiera que sea sencillo para mi crear entradas.</span> Podemos lograrlo ofreciéndote un panel de administración muy similar a los que utilizas en redes sociales(por ejemplo Facebook).</li>
+                            
+                            <li><span>es muy importante que pueda poner google adsense</span> Si,podemos incluirlo</li>
+                            <li><span>que tenga un dominio propio.</span> Ya nos ocupamos de comprobar que el dominio caminolibrearg.com  está disponible. Podemos administrar sin cargos adicionales la solicitud del mismo, que tiene un costo de 20USD anuales.</li>
+                        </ul>
+                        
+                        <h2>Presupuesto</h2>
+                        <p>
+                            Teniendo en cuenta que estamos en pandemia y queremos que los negocios tengan visibilidad en internet, te ofrecemos un precio promocional de $12.500 para concretar la primera versión de la página que contenga los puntos detallados arriba. En vista de seguir creciendo juntos,tenemos varias ideas para agregar a futuro en tu sitio que podemos comentarte en la reunión.
+                            Quedamos a la espera de un día y horario para realizar la reunión y ayudarte a concretar y plasmar tus ideas. Saludos atentamente,Triunfalnet.
+                        </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="https://api.whatsapp.com/send?phone=5493413519428" target="_blank">Envianos un mensaje por Whatsapp</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">Triunfalnet, Rosario, Argentina</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+            
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
